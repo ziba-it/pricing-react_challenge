@@ -3,9 +3,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url("../public/images/Image.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   backdrop-filter: brightness(0.35);
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
 }

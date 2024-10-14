@@ -1,0 +1,9 @@
+@import "../../../variables.scss";
+
+.question {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: $modal-question;
+  text-align: center;
+  line-height: 1.25rem;
+}

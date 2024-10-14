@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+
+.main-container {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 300ms;
+  &:hover {
+    filter: brightness(1.25);
+  }
+}
+
+.number-container {
+  position: absolute;
+  top: 27px;
+  right: 0px;
+  background-color: $primary-050;
+  border-radius: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+}
+
+.number {
+  color: $complementary-600;
+  font-size: 0.75rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}

@@ -1,0 +1,11 @@
+$complementary-600: #ea580c;
+$primary-050: #fcfcfc;
+
+.pricing-icon {
+  rect {
+    fill: $complementary-600;
+  }
+  path {
+    fill: $primary-050;
+  }
+}

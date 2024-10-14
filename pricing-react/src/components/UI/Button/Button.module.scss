@@ -1,0 +1,57 @@
+@import "../../../variables.scss";
+
+.button {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: $primary-050;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-style: none;
+  border-radius: 53px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+  transition-property: all;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.orange {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $complementary-600;
+  color: $complementary-600;
+  &:hover {
+    background-color: $light-complementary;
+  }
+}
+
+.yellow {
+  color: $yellow-600;
+  &:hover {
+    background-color: $light-yellow;
+  }
+}
+
+.green {
+  color: $green-600;
+  &:hover {
+    background-color: $light-green;
+  }
+}
+.red {
+  color: $red-600;
+  &:hover {
+    background-color: $light-red;
+  }
+}
+
+.primary {
+  background-color: $complementary-600;
+  color: $primary-050;
+}
+
+.primary:hover {
+  filter: brightness(1.25);
+}

@@ -1,0 +1,9 @@
+@import "../../../variables.scss";
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: $modal-title;
+}

@@ -1,19 +1,19 @@
 import "./App.scss";
-import CartButtonContainer from "./components/CartButtonContainer";
-import CartModal from "./components/CartModal";
-import EmptyCartModal from "./components/EmptyCartModal";
-import PricingSection from "./components/PricingSection";
-import ConfirmationModal from "./components/ConfirmationModal";
+import { CartProvider } from "./context/CartContext";
+import CartButton from "./components/Cart/CartButton/CartButton";
+import FilledCart from "./components/Cart/FilledCart/FilledCart";
+import PricingSection from "./components/PricingSection/PricingSection";
+import ConfirmationModal from "./components/Modals/ConfirmationModal/ConfirmationModal";
 
 function App() {
   return (
-    <main>
-      <CartButtonContainer />
-      <CartModal />
-      <EmptyCartModal />
-      <PricingSection />
-      <ConfirmationModal />
-    </main>
+    <CartProvider>
+      <main>
+        <CartButton />
+        <PricingSection />
+        <ConfirmationModal />
+      </main>
+    </CartProvider>
   );
 }
 

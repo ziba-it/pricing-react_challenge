@@ -1,0 +1,26 @@
+@import "../../../../variables.scss";
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $primary-050;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.featured {
+  background-color: $primary-050;
+}
+
+.featuredTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

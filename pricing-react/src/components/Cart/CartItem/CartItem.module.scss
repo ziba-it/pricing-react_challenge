@@ -1,0 +1,56 @@
+@import "../../../variables.scss";
+
+.cart-item {
+  background-color: $primary-050;
+  width: 100%;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.item-name {
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.edit-button {
+  width: 2rem;
+  height: 2rem;
+}
+
+.remove-button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  color: $primary-400;
+  gap: 0.5rem;
+}

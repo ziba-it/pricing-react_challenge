@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+.container {
+  display: flex;
+  gap: 1rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.cancel-button {
+  background-color: transparent;
+  color: $complementary-600;
+  border: 1px $complementary-600;
+}
