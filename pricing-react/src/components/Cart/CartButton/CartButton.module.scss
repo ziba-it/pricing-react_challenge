@@ -1,9 +1,13 @@
 @import "../../../variables.scss";
 
 .main-container {
-  position: absolute;
-  right: 30px;
-  top: 30px;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1024px) {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
 }
 
 .button {
