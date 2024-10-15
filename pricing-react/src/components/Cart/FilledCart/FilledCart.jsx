@@ -13,6 +13,7 @@ export default function FilledCart() {
     <div className={styles.container}>
       {items.map((item) => (
         <CartItem
+          key={`cart-item-${item.id}-${item.title}-${item.price}`}
           name={item.title}
           price={item.price}
           icon={item.icon}

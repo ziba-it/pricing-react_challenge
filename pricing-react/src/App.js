@@ -1,7 +1,6 @@
 import "./App.scss";
 import { CartProvider } from "./context/CartContext";
 import CartButton from "./components/Cart/CartButton/CartButton";
-import FilledCart from "./components/Cart/FilledCart/FilledCart";
 import PricingSection from "./components/PricingSection/PricingSection";
 import ConfirmationModal from "./components/Modals/ConfirmationModal/ConfirmationModal";
 

@@ -18,17 +18,35 @@ export const CartProvider = ({ children }) => {
   };
 
   const addItemToCart = (selectedPack) => {
-    const itemToAdd = {
-      ...selectedPack,
-      quantity: (selectedPack.quantity || 0) + 1,
-    };
+    const existingItemIndex = cart.items.findIndex(
+      (item) => item.id === selectedPack.id
+    );
 
-    const updatedItems = [...cart.items, itemToAdd];
+    let updatedItems;
+
+    if (existingItemIndex > -1) {
+      const updatedItem = {
+        ...cart.items[existingItemIndex],
+        quantity: cart.items[existingItemIndex].quantity + 1,
+        subtotal:
+          selectedPack.price * (cart.items[existingItemIndex].quantity + 1),
+      };
+      updatedItems = [...cart.items];
+      updatedItems[existingItemIndex] = updatedItem;
+    } else {
+      const itemToAdd = {
+        ...selectedPack,
+        quantity: 1,
+        subtotal: selectedPack.price,
+      };
+      updatedItems = [...cart.items, itemToAdd];
+    }
 
     const updatedTotal = updatedItems.reduce(
-      (acc, item) => acc + item.price * item.quantity,
+      (acc, item) => acc + item.subtotal,
       0
     );
+
     setCart({ total: updatedTotal, items: updatedItems });
   };
 

@@ -3,7 +3,7 @@ import styles from "./PricingCardsContainer.module.scss";
 
 const pricingData = [
   {
-    id: 1,
+    id: "bravo-pack-10",
     title: "Bravo Pack",
     price: 10,
     features: ["Complete documentation", "Working materials in Sketch"],
@@ -13,8 +13,8 @@ const pricingData = [
     quantity: 0,
   },
   {
-    id: 2,
-    title: "Alpha Pack",
+    id: "premium-pack-67",
+    title: "Premium Pack",
     price: 67,
     features: ["Working materials in EPS", "6 months access to the library"],
     icon: "icons/PriceIcon1.svg",
@@ -23,7 +23,7 @@ const pricingData = [
     quantity: 0,
   },
   {
-    id: 3,
+    id: "alpha-pack-75",
     title: "Alpha Pack",
     price: 75,
     features: ["Working materials in PSD", "1 year access to the library"],
@@ -33,7 +33,7 @@ const pricingData = [
     quantity: 0,
   },
   {
-    id: 4,
+    id: "extra-pack-80",
     title: "Extra Pack",
     price: 80,
     features: ["Complete documentation", "2GB cloud storage"],
@@ -50,6 +50,7 @@ export default function PricingCardsContainer() {
       {pricingData.map((item) => (
         <PricingCard
           key={item.id}
+          id={item.id}
           title={item.title}
           price={item.price}
           features={item.features}

@@ -4,7 +4,7 @@ export default function CartItem({ icon, name, price, quantity }) {
   return (
     <div className={styles["cart-item"]}>
       <img src={icon} alt="" className={styles.icon} />
-      <div class={styles["pack-container"]}>
+      <div className={styles["pack-container"]}>
         <h3 className={styles["item-name"]}>{name}</h3>
         <div className={styles["quantity-container"]}>
           <img
@@ -12,7 +12,7 @@ export default function CartItem({ icon, name, price, quantity }) {
             alt=""
             className={styles["edit-button"]}
           />
-          <p class="quantity-display">{quantity}</p>
+          <p>{quantity}</p>
           <img
             src="/icons/AddIcon.svg"
             alt=""

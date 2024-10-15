@@ -12,8 +12,9 @@ export default function PricingCard({
   icon,
   isFeatured,
   color,
+  id,
 }) {
-  const pack = { title, features, price, icon, isFeatured, color };
+  const pack = { title, features, price, icon, isFeatured, color, id };
   const { openModal } = useCart();
 
   const handleClick = () => {

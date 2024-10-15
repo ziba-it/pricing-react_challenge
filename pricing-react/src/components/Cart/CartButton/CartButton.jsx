@@ -6,8 +6,10 @@ import { useState } from "react";
 
 import styles from "./CartButton.module.scss";
 
-export default function CartButton({ amount }) {
+export default function CartButton() {
   const [isClicked, setIsClicked] = useState(false);
+  const { cart } = useCart();
+  const { items } = cart;
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -18,11 +20,11 @@ export default function CartButton({ amount }) {
       <button className={styles.button} onClick={handleClick}>
         <Pricing />
         <div className={styles["number-container"]}>
-          <p className={styles.number}>{amount}</p>
+          <p className={styles.number}>{items.length}</p>
         </div>
       </button>
-      {isClicked && <EmptyCart />}
-      <FilledCart />
+      {cart.total < 1 && isClicked && <EmptyCart />}
+      {cart.total > 1 && isClicked && <FilledCart />}
     </div>
   );
 }
