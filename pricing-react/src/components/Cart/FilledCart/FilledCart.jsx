@@ -1,6 +1,6 @@
 import { Button } from "../../UI";
-import CartItem from "../CartItem/CartItem";
-import CartSummary from "../CartSummary/CartSummary";
+import CartItem from "./CartItem/CartItem";
+import CartSummary from "./CartSummary/CartSummary";
 import { useCart } from "../../../context/CartContext";
 
 import styles from "./FilledCart.module.scss";

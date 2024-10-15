@@ -1,6 +1,6 @@
 import ItemSummary from "../ItemSummary/ItemSummary";
 import TotalSummary from "../TotalSummary/TotalSummary";
-import { useCart } from "../../../context/CartContext";
+import { useCart } from "../../../../context/CartContext";
 
 import styles from "./CartSummary.module.scss";
 

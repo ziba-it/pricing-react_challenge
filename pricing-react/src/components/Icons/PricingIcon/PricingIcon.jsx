@@ -1,6 +1,6 @@
-import styles from "./Pricing.module.scss";
+import styles from "./PricingIcon.module.scss";
 
-export function Pricing() {
+export function PricingIcon() {
   return (
     <svg
       className={styles["pricing-icon"]}

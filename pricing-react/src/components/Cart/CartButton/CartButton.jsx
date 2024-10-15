@@ -1,4 +1,4 @@
-import { Pricing } from "../../Icons/Pricing";
+import { PricingIcon } from "../../Icons/PricingIcon/PricingIcon";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import FilledCart from "../FilledCart/FilledCart";
 import { useCart } from "../../../context/CartContext";
@@ -18,7 +18,7 @@ export default function CartButton() {
   return (
     <div className={styles["main-container"]}>
       <button className={styles.button} onClick={handleClick}>
-        <Pricing />
+        <PricingIcon />
         <div className={styles["number-container"]}>
           <p className={styles.number}>{items.length}</p>
         </div>
