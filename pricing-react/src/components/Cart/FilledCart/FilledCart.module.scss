@@ -12,9 +12,12 @@
   padding: 1.5rem;
   background-color: $bg-transparent-grey;
   color: $primary-900;
-  right: 0px;
-  top: 45px;
+  top: 170px;
   z-index: 50;
+  @media (min-width: 1024px) {
+    right: 0px;
+    top: 45px;
+  }
 }
 
 .cart-item {

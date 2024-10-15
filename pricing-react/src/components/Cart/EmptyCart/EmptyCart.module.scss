@@ -13,8 +13,11 @@
   padding: 1rem;
   background-color: $primary-050;
   color: $primary-900;
-  right: 0px;
-  top: 45px;
+  top: 170px;
+  @media (min-width: 1024px) {
+    right: 0px;
+    top: 45px;
+  }
 }
 
 .title {
