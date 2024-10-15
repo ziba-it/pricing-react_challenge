@@ -1,6 +1,4 @@
-import styles from "./CloseIcon.module.scss";
-
-export default function CloseIcon() {
+export function CloseIcon({ ...props }) {
   return (
     <svg
       width="38"
@@ -8,6 +6,7 @@ export default function CloseIcon() {
       viewBox="0 0 38 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M23 15L15 23"

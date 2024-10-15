@@ -41,3 +41,12 @@
   font-family: "Manrope", sans-serif;
   font-weight: 700;
 }
+
+.pricing-icon {
+  rect {
+    fill: $complementary-600;
+  }
+  path {
+    fill: $primary-050;
+  }
+}

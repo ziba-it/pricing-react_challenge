@@ -19,7 +19,7 @@ export default function CartButton() {
   return (
     <div className={styles["main-container"]}>
       <button className={styles.button} onClick={handleClick}>
-        <PricingIcon />
+        <PricingIcon className={styles["pricing-icon"]} />
         {items.length > 0 && (
           <div className={styles["number-container"]}>
             <p className={styles.number}>{items.length}</p>

@@ -1,5 +1,5 @@
 import { ButtonsWrapper, QuestionWrapper, TitleWrapper } from "../../UI";
-import CloseIcon from "../../Icons/CloseIcon/CloseIcon";
+import { CloseIcon } from "../../Icons";
 import { useCart } from "../../../context/CartContext";
 
 import styles from "./ConfirmationModal.module.scss";

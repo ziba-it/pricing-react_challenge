@@ -1,32 +1,24 @@
+import { AddIcon, SubstractIcon, BinIcon } from "../../../Icons/index";
+
 import styles from "./CartItem.module.scss";
 
 export default function CartItem({ icon, name, price, quantity }) {
+  const IconComponent = icon;
+
   return (
     <div className={styles["cart-item"]}>
-      <img src={icon} alt="" className={styles.icon} />
+      <IconComponent className={styles.icon} />
       <div className={styles["pack-container"]}>
         <h3 className={styles["item-name"]}>{name}</h3>
         <div className={styles["quantity-container"]}>
-          <img
-            src="/icons/SubstractIcon.svg"
-            alt=""
-            className={styles["edit-button"]}
-          />
+          <SubstractIcon className={styles["edit-button"]} />
           <p>{quantity}</p>
-          <img
-            src="/icons/AddIcon.svg"
-            alt=""
-            className={styles["edit-button"]}
-          />
+          <AddIcon className={styles["edit-button"]} />
         </div>
       </div>
       <div className={styles["price-container"]}>
         <p>${price}</p>
-        <img
-          src="icons/BinIcon.svg"
-          alt=""
-          className={styles["remove-button"]}
-        />
+        <BinIcon className={styles["remove-button"]} />
       </div>
     </div>
   );

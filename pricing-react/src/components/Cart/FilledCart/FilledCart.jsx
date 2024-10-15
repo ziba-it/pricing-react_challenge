@@ -9,7 +9,7 @@ export default function FilledCart() {
   const {
     cart: { items },
   } = useCart();
-
+  console.log(items);
   return (
     <div className={styles.container}>
       {items.map(({ id, title, price, icon, quantity }) => (
