@@ -5,20 +5,20 @@ import { useCart } from "../../../../context/CartContext";
 import styles from "./CartSummary.module.scss";
 
 export default function CartSummary() {
-  const { cart } = useCart();
-
-  const { items } = cart;
+  const {
+    cart: { items, total },
+  } = useCart();
 
   return (
     <div className={styles.summary}>
-      {items.map((item) => (
+      {items.map(({ id, title, price, subtotal }) => (
         <ItemSummary
-          key={`item-summary-${item.id}-${item.title}-${item.price}`}
-          name={item.title}
-          subtotal={item.subtotal}
+          key={`item-summary-${id}-${title}-${price}`}
+          name={title}
+          subtotal={subtotal}
         />
       ))}
-      <TotalSummary total={cart.total} />
+      <TotalSummary total={total} />
     </div>
   );
 }

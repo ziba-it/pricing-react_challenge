@@ -6,18 +6,19 @@ import { useCart } from "../../../context/CartContext";
 import styles from "./FilledCart.module.scss";
 
 export default function FilledCart() {
-  const { cart } = useCart();
-  const { items } = cart;
+  const {
+    cart: { items },
+  } = useCart();
 
   return (
     <div className={styles.container}>
-      {items.map((item) => (
+      {items.map(({ id, title, price, icon, quantity }) => (
         <CartItem
-          key={`cart-item-${item.id}-${item.title}-${item.price}`}
-          name={item.title}
-          price={item.price}
-          icon={item.icon}
-          quantity={item.quantity}
+          key={`cart-item-${id}-${title}-${price}`}
+          name={title}
+          price={price}
+          icon={icon}
+          quantity={quantity}
         />
       ))}
       <CartSummary />

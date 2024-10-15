@@ -7,12 +7,13 @@ import { useState } from "react";
 import styles from "./CartButton.module.scss";
 
 export default function CartButton() {
-  const [isClicked, setIsClicked] = useState(false);
-  const { cart } = useCart();
-  const { items } = cart;
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const {
+    cart: { items, total },
+  } = useCart();
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
+    setIsCartOpen(!isCartOpen);
   };
 
   return (
@@ -25,8 +26,7 @@ export default function CartButton() {
           </div>
         )}
       </button>
-      {cart.total < 1 && isClicked && <EmptyCart />}
-      {cart.total > 1 && isClicked && <FilledCart />}
+      {isCartOpen && (total < 1 ? <EmptyCart /> : <FilledCart />)}
     </div>
   );
 }
