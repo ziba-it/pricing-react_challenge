@@ -1,7 +1,7 @@
-import Button from "../../../UI/Button/Button";
+import { Button } from "../../../ui";
 import Header from "./Header/Header";
 import Features from "./Features/Features";
-import { FeaturedIcon } from "../../../Icons";
+import { FeaturedIcon } from "../../../icons";
 import { useCart } from "../../../../context/CartContext";
 
 import styles from "./PricingCard.module.scss";

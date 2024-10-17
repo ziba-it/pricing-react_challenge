@@ -4,7 +4,7 @@ import {
   PriceBravoIcon,
   PricePremiumIcon,
   PriceExtraIcon,
-} from "../../Icons";
+} from "../../icons";
 
 import styles from "./PricingCardsContainer.module.scss";
 

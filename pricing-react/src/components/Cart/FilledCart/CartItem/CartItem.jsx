@@ -1,4 +1,4 @@
-import { AddIcon, SubstractIcon, BinIcon } from "../../../Icons/index";
+import { AddIcon, SubstractIcon, BinIcon } from "../../../icons/index";
 
 import styles from "./CartItem.module.scss";
 

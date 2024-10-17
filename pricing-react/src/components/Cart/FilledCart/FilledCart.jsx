@@ -1,4 +1,4 @@
-import { Button } from "../../UI";
+import { Button } from "../../ui";
 import CartItem from "./CartItem/CartItem";
 import CartSummary from "./CartSummary/CartSummary";
 import { useCart } from "../../../context/CartContext";

@@ -1,4 +1,4 @@
-import { PricingIcon } from "../../Icons/PricingIcon/PricingIcon";
+import { PricingIcon } from "../../icons/PricingIcon/PricingIcon";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import FilledCart from "../FilledCart/FilledCart";
 import { useCart } from "../../../context/CartContext";
