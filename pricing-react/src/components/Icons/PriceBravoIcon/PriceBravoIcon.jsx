@@ -1,0 +1,69 @@
+export function PriceBravoIcon({ ...props }) {
+  return (
+    <svg
+      width="140"
+      height="140"
+      viewBox="0 0 140 140"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g filter="url(#filter0_d_17315_870)">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M70 101C92.0914 101 110 83.0914 110 61C110 38.9086 92.0914 21 70 21C47.9086 21 30 38.9086 30 61C30 83.0914 47.9086 101 70 101Z"
+          fill="#FCFCFC"
+        />
+      </g>
+      <path
+        d="M76.5333 50.64C80.4534 52.88 83.0667 57.08 83.0667 61.9333C83.0667 69.12 77.1867 75 70 75C62.8133 75 56.9333 69.12 56.9333 61.9333C56.9333 57.08 59.5467 52.88 63.4667 50.64"
+        stroke="#EAB308"
+        stroke-width="1.5"
+        stroke-linecap="square"
+      />
+      <path
+        d="M70 47V55.4"
+        stroke="#EAB308"
+        stroke-width="1.5"
+        stroke-linecap="square"
+      />
+      <defs>
+        <filter
+          id="filter0_d_17315_870"
+          x="0"
+          y="0"
+          width="140"
+          height="140"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="9" />
+          <feGaussianBlur stdDeviation="15" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 1 0 0 0 0 0.698039 0 0 0 0 0.211765 0 0 0 0.65 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_17315_870"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_17315_870"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+}

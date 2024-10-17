@@ -1,0 +1,12 @@
+@import "../../../../variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.item-name {
+  color: $primary-400;
+}

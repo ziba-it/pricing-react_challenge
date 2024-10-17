@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  text-align: center;
+  position: absolute;
+  border-radius: 0.75rem;
+  font-family: "Manrope", sans-serif;
+  padding: 1.5rem;
+  background-color: $bg-transparent-grey;
+  color: $primary-900;
+  top: 170px;
+  z-index: 50;
+  @media (min-width: 1024px) {
+    right: 0px;
+    top: 45px;
+  }
+}
+
+.cart-item {
+  background-color: $primary-050;
+  width: 100%;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.custom-button {
+  width: 100%;
+}

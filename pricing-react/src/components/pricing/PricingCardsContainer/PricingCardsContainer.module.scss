@@ -1,0 +1,16 @@
+@import "../../../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 2.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    width: auto;
+  }
+}
