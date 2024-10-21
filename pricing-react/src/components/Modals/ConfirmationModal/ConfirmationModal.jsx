@@ -1,11 +1,14 @@
 import { ButtonsWrapper, QuestionWrapper, TitleWrapper } from "../../ui";
 import { CloseIcon } from "../../icons";
-import { useCart } from "../../../context/CartContext";
+import { useCartStore } from "../../../store/cartStore";
 
 import styles from "./ConfirmationModal.module.scss";
 
 export default function ConfirmationModal({ name }) {
-  const { isModalOpen, selectedPack, closeModal, addItemToCart } = useCart();
+  const isModalOpen = useCartStore((state) => state.isModalOpen);
+  const selectedPack = useCartStore((state) => state.selectedPack);
+  const closeModal = useCartStore((state) => state.closeModal);
+  const addItemToCart = useCartStore((state) => state.addItemToCart);
 
   const buttons = [
     {

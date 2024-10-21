@@ -1,16 +1,14 @@
 import { PricingIcon } from "../../icons/PricingIcon/PricingIcon";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import FilledCart from "../FilledCart/FilledCart";
-import { useCart } from "../../../context/CartContext";
 import { useState } from "react";
+import { useCartStore } from "../../../store/cartStore";
 
 import styles from "./CartButton.module.scss";
 
 export default function CartButton() {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const {
-    cart: { items, total },
-  } = useCart();
+  const { items, total } = useCartStore((state) => state.cart);
 
   const handleClick = () => {
     setIsCartOpen(!isCartOpen);
