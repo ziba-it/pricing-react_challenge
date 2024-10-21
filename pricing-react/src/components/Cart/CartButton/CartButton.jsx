@@ -1,6 +1,6 @@
-import { PricingIcon } from "../../icons/PricingIcon/PricingIcon";
-import EmptyCart from "../EmptyCart/EmptyCart";
-import FilledCart from "../FilledCart/FilledCart";
+import { PricingIcon } from "../../icons/pricingIcon/PricingIcon";
+import EmptyCart from "../emptyCart/EmptyCart";
+import FilledCart from "../filledCart/FilledCart";
 import { useState } from "react";
 import { useCartStore } from "../../../store/cartStore";
 

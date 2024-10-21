@@ -1,6 +1,6 @@
-import PricingHeader from "./PricingHeader/PricingHeader";
-import PricingToggle from "./PricingToggle/PricingToggle";
-import PricingCardsContainer from "./PricingCardsContainer/PricingCardsContainer";
+import PricingHeader from "./pricingHeader/PricingHeader";
+import PricingToggle from "./pricingToggle/PricingToggle";
+import PricingCardsContainer from "./pricingCardsContainer/PricingCardsContainer";
 
 import styles from "./PricingSection.module.scss";
 
