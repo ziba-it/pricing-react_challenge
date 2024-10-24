@@ -13,16 +13,13 @@ export default function CartButton() {
 
   useEffect(() => {
     if (items.length > 0) {
-      // Añade la clase para la animación
       const mainContainer = mainContainerRef.current;
       mainContainer.classList.add(styles.expand);
 
-      // Elimina la clase después de 500ms (duración de la animación)
       const timer = setTimeout(() => {
         mainContainer.classList.remove(styles.expand);
       }, 500);
 
-      // Limpieza
       return () => clearTimeout(timer);
     }
   }, [items.length]); //
