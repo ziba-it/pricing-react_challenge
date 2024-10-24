@@ -1,13 +1,13 @@
-import { AddIcon } from "./AddIcon/AddIcon";
-import { BinIcon } from "./BinIcon/BinIcon";
-import { CloseIcon } from "./CloseIcon/CloseIcon";
-import { FeaturedIcon } from "./FeaturedIcon/FeaturedIcon";
-import { PriceAlphaIcon } from "./PriceAlphaIcon/PriceAlphaIcon";
-import { PriceBravoIcon } from "./PriceBravoIcon/PriceBravoIcon";
-import { PriceExtraIcon } from "./PriceExtraIcon/PriceExtraIcon";
-import { PricePremiumIcon } from "./PricePremiumIcon/PricePremiumIcon";
-import { PricingIcon } from "./PricingIcon/PricingIcon";
-import { SubstractIcon } from "./SubstractIcon/SubstractIcon";
+import { AddIcon } from "./addIcon/AddIcon";
+import { BinIcon } from "./binIcon/BinIcon";
+import { CloseIcon } from "./closeIcon/CloseIcon";
+import { FeaturedIcon } from "./featuredIcon/FeaturedIcon";
+import { PriceAlphaIcon } from "./priceAlphaIcon/PriceAlphaIcon";
+import { PriceBravoIcon } from "./priceBravoIcon/PriceBravoIcon";
+import { PriceExtraIcon } from "./priceExtraIcon/PriceExtraIcon";
+import { PricePremiumIcon } from "./pricePremiumIcon/PricePremiumIcon";
+import { PricingIcon } from "./pricingIcon/PricingIcon";
+import { SubstractIcon } from "./substractIcon/SubstractIcon";
 
 export {
   AddIcon,

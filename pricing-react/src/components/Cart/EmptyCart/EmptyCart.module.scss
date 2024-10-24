@@ -14,6 +14,9 @@
   background-color: $primary-050;
   color: $primary-900;
   top: 170px;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: slideIn 0.3s forwards 0.01s;
   @media (min-width: 1024px) {
     right: 0px;
     top: 45px;
@@ -27,4 +30,11 @@
 .description {
   font-weight: 500;
   line-height: 1.25;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

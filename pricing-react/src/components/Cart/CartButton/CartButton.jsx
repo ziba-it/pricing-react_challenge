@@ -1,23 +1,34 @@
-import { PricingIcon } from "../../icons/PricingIcon/PricingIcon";
-import EmptyCart from "../EmptyCart/EmptyCart";
-import FilledCart from "../FilledCart/FilledCart";
-import { useCart } from "../../../context/CartContext";
-import { useState } from "react";
+import { PricingIcon } from "../../icons/pricingIcon/PricingIcon";
+import EmptyCart from "../emptyCart/EmptyCart";
+import FilledCart from "../filledCart/FilledCart";
+import { useState, useEffect, useRef } from "react";
+import { useCartStore } from "../../../store/cartStore";
 
 import styles from "./CartButton.module.scss";
 
 export default function CartButton() {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const {
-    cart: { items, total },
-  } = useCart();
+  const { items, total } = useCartStore((state) => state.cart);
+  const mainContainerRef = useRef(null);
 
+  useEffect(() => {
+    if (items.length > 0) {
+      const mainContainer = mainContainerRef.current;
+      mainContainer.classList.add(styles.expand);
+
+      const timer = setTimeout(() => {
+        mainContainer.classList.remove(styles.expand);
+      }, 500);
+
+      return () => clearTimeout(timer);
+    }
+  }, [items.length]); //
   const handleClick = () => {
     setIsCartOpen(!isCartOpen);
   };
 
   return (
-    <div className={styles["main-container"]}>
+    <div ref={mainContainerRef} className={`${styles["main-container"]}`}>
       <button className={styles.button} onClick={handleClick}>
         <PricingIcon className={styles["pricing-icon"]} />
         {items.length > 0 && (

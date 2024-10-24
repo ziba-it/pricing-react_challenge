@@ -2,7 +2,7 @@ import { Button } from "../../../ui";
 import Header from "./Header/Header";
 import Features from "./Features/Features";
 import { FeaturedIcon } from "../../../icons";
-import { useCart } from "../../../../context/CartContext";
+import { useCartStore } from "../../../../store/cartStore";
 
 import styles from "./PricingCard.module.scss";
 
@@ -16,8 +16,7 @@ export default function PricingCard({
   id,
 }) {
   const pack = { title, features, price, icon, isFeatured, color, id };
-  const { openModal } = useCart();
-
+  const openModal = useCartStore((state) => state.openModal);
   const handleClick = () => {
     openModal(pack);
   };

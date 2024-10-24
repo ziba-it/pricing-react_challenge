@@ -1,14 +1,11 @@
 import ItemSummary from "../ItemSummary/ItemSummary";
 import TotalSummary from "../TotalSummary/TotalSummary";
-import { useCart } from "../../../../context/CartContext";
+import { useCartStore } from "../../../../store/cartStore";
 
 import styles from "./CartSummary.module.scss";
 
 export default function CartSummary() {
-  const {
-    cart: { items, total },
-  } = useCart();
-
+  const { items, total } = useCartStore((state) => state.cart);
   return (
     <div className={styles.summary}>
       {items.map(({ id, title, price, subtotal }) => (
