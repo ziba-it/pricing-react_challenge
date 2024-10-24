@@ -16,11 +16,7 @@ export default function CartItem({ icon, name, price, quantity, id }) {
   };
 
   const handleDecrementItem = () => {
-    if (quantity === 1) {
-      removeItemFromCart(id);
-    } else {
-      decrementItemFromCart(id);
-    }
+    quantity === 1 ? removeItemFromCart(id) : decrementItemFromCart(id);
   };
 
   const handleAddItem = () => {
